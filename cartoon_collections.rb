@@ -1,11 +1,14 @@
-def greet_characters(array)
-  # Use `each` to enumerate over the provided array
-  #
-  # Print a custom greeting for each element
+
+def greet_characters(characters_array)
+characters_array.each do |character|
+   puts "Hello #{character}!"
+  
+end 
 end
 
-def list_dwarves(array)
-  # Use `each_with_index` to enumerate over the provided array
-  #
-  # Print a numbered list of each element
+def list_dwarves(dwarves_array)
+  dwarves_array.each.with_index(1) do |dwarves,index|
+  puts "#{index}" "#{dwarves}"
+  end
+
 end
